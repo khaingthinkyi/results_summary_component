@@ -136,6 +136,7 @@ body{
   border-radius: 30px;
   padding: 10px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .attribution { font-size: 20px; text-align: center; margin-bottom: 30px; }
 .attribution a { color: hsl(228, 45%, 44%);}
