@@ -1,0 +1,210 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+figure{
+  line-height: 0;
+}
+img{
+  width: 100%;
+}
+a{
+  text-decoration: none; 
+  cursor: pointer;
+}
+body{
+  background-color: hsl(221, 100%, 96%);
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+.content{
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  margin: 30px auto;
+}
+.content p{
+  font-size: 18px;
+  line-height: 24px;
+}
+.content .left{
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  max-width: 300px;
+  width: 100%;
+  border-radius: 30px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  right: -20px;
+  color: hsl(241, 100%, 89%);
+}
+.content .left .skill_status{
+  color: #fff;
+  margin-bottom: 10px;
+}
+.content .left .result_point{
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  max-width: 100px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.content .left .result_point span{
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: hsl(241, 100%, 89%);
+}
+.content .left .result_point span.point_no{
+  font-size: 50px;
+  line-height: 60px;
+  color: #fff;
+}
+.content .right{
+  max-width: 300px;
+  width: 100%;
+  padding: 20px 20px 20px 40px;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.content .right .status{
+  margin: 30px 0;
+}
+.content .right .status_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.content .right .status_content p{
+  display: flex;
+  align-items: center;
+}
+.content .right .status_content .point{
+  color: hsl(240, 1%, 54%);
+}
+.content .right .status_content .your_point{
+  color: hsl(224, 30%, 27%);
+}
+.content .right .status_content.reaction .reaction_txt::before, .content .right .status_content.memory .memory_txt::before, .content .right .status_content.verbal .verbal_txt::before, .content .right .status_content.visual .visual_txt::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.content .right .status_content.reaction{
+  background-color: hsl(0, 71%, 96%);
+  color: hsl(0, 100%, 67%);
+}
+.content .right .status_content.reaction .reaction_txt::before{
+  background: url(../images/icon-reaction.svg) no-repeat;
+}
+.content .right .status_content.memory{
+  background-color: hsl(40, 36%, 95%);
+  color: hsl(39, 100%, 56%);
+}
+.content .right .status_content.memory .memory_txt::before{
+  background: url(../images/icon-memory.svg) no-repeat;
+}
+.content .right .status_content.verbal{
+  background-color: hsl(167, 54%, 95%);
+  color: hsl(166, 100%, 37%);
+}
+.content .right .status_content.verbal .verbal_txt::before{
+  background: url(../images/icon-verbal.svg) no-repeat;
+}
+.content .right .status_content.visual{
+  background-color: hsl(225, 5%, 95%);
+  color: hsl(234, 85%, 45%);
+}
+.content .right .status_content.visual .visual_txt::before{
+  background: url(../images/icon-visual.svg) no-repeat;
+}
+.content .right .continue_btn{
+  display: block;
+  color: #fff;
+  text-align: center;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.attribution { font-size: 20px; text-align: center; margin-bottom: 30px; }
+.attribution a { color: hsl(228, 45%, 44%);}
+@media (max-width: 768px){
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  body{
+    padding: 0 calc(40 / 750 * 100vw);
+    box-sizing: border-box;
+  }
+  .content{
+    flex-direction: column;
+    max-width: calc(350 / 750 * 100vw);
+    margin: calc(30 / 750 * 100vw) auto;
+  }
+  .content p{
+    font-size: calc(18 / 750 * 100vw);
+    line-height: calc(24 / 750 * 100vw);
+  }
+  .content .left{
+    max-width: 100%;
+    border-radius: calc(30 / 750 * 100vw);
+    padding: calc(20 / 750 * 100vw) calc(20 / 750 * 100vw) calc(30 / 750 * 100vw);
+    right: 0;
+    bottom: calc(-30 / 750 * 100vw);
+  }
+  .content .left .skill_status{
+    margin-bottom: calc(10 / 750 * 100vw);
+  }
+  .content .left .result_point{
+    max-width: calc(100 / 750 * 100vw);
+    margin: calc(20 / 750 * 100vw) auto;
+    padding: calc(10 / 750 * 100vw);
+  }
+  .content .left .result_point span{
+    font-size: calc(14 / 750 * 100vw);
+    line-height: calc(20 / 750 * 100vw);
+  }
+  .content .left .result_point span.point_no{
+    font-size: calc(50 / 750 * 100vw);
+    line-height: calc(60 / 750 * 100vw);
+  }
+  .content .right{
+    max-width: 100%;
+    padding: calc(50 / 750 * 100vw) calc(20 / 750 * 100vw) calc(20 / 750 * 100vw);
+    border-top-right-radius: calc(30 / 750 * 100vw);
+    border-top-left-radius: calc(30 / 750 * 100vw);
+    border-bottom-right-radius: 0;
+  }
+  .content .right .status{
+    margin: calc(30 / 750 * 100vw) 0;
+  }
+  .content .right .status_content{
+    padding: calc(10 / 750 * 100vw);
+    margin-bottom: calc(10 / 750 * 100vw);
+  }
+  .content .right .status_content.reaction .reaction_txt::before, .content .right .status_content.memory .memory_txt::before, .content .right .status_content.verbal .verbal_txt::before, .content .right .status_content.visual .visual_txt::before{
+    width: calc(20 / 750 * 100vw);
+    height: calc(20 / 750 * 100vw);
+    margin-right: calc(10 / 750 * 100vw);
+    background-size: cover;
+  }
+  .content .right .continue_btn{
+    border-radius: calc(30 / 750 * 100vw);
+    padding: calc(10 / 750 * 100vw);
+  }
+  .attribution { 
+    font-size: calc(20 / 750 * 100vw);
+    margin-bottom: calc(30 / 750 * 100vw);
+  }
+  }
