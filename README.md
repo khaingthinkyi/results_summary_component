@@ -1,2 +1,2 @@
 # results_summary_component
-# results summary component using html & css
+# results summary component using HTML & CSS
